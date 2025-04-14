@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    Javascript If Conditions
+
+    <script>
+      let age = prompt("Enter your age: ");
+      let overseasApplicant = prompt("Are you overseas applicant: Yes or No");
+      let isOverseas = false;
+      console.log(age);
+      console.log(age >= 18);
+      console.log(overseasApplicant.toLowerCase());
+
+      console.log(age == 30);
+      if (overseasApplicant == "yes") {
+        isOverseas = true;
+      }
+      console.log("isOverseas", isOverseas);
+
+      // Boolean Value
+      let isEligible = false;
+
+      // && amd
+      //  || or
+      // ! not
+
+      if (age >= 18) {
+        console.log("Yes you are eligible for Nadra NIC");
+
+        if (isOverseas) {
+          console.log("GO to Nadra ISB office");
+        }
+      }
+
+      if (age >= 18 && isOverseas) {
+        console.log("Operators: GO to Nadra ISB office");
+      }
+
+      let hasExperience = true;
+      let graduated = false;
+      let alreadySubcribedBenazirIncome = true;
+      let housholdIncome = 100000;
+
+      if (hasExperience || graduated) {
+        console.log("You are eligible to apply");
+      }
+
+      if (!graduated) {
+        console.log("You will be asked some addit. questions");
+      }
+
+      console.log("AGe", age);
+      let condition1 = age > 50 && graduated && hasExperience;
+      let condition2 = alreadySubcribedBenazirIncome && housholdIncome < 50000;
+      console.log(condition1 || condition2);
+
+      let options = prompt("Enter 1. for NIC, 2. License, 3. Marriage");
+
+      if (options == 1) {
+        console.log("You are moved to NIC");
+      } else if (options == 2) {
+        console.log("You  are moved to License");
+      } else if (options == 3) {
+        console.log("You  are moved to Marriage");
+      }
+      else{
+        console.log("Wrong Input")
+      }
+
+     
+    </script>
+  </body>
+</html>
