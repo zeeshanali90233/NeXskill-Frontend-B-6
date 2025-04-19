@@ -1,0 +1,12 @@
+1) Portoflio Form, Also make function called when submitted
+
+2) Separate Project, City Name , Search Button , Form Function to be called
+alert lahore weather is 23 degree celcius 
+
+3) Separate Project , Query Text , Send Button , Function call 
+
+4) Lots of Function, Login, Sum, Substract, Greet, getChatbotAnswer,
+renewCard, 
+including respective returns and not to use console.Login
+
+5) Icons , FontAwesome 
