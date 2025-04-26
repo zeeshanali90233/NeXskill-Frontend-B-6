@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="getWeather(); return false;">
+      <div>
+        <label for="cityName">City:</label>
+        <input type="text" name="cityName" id="cityName" />
+      </div>
+
+      <button type="submit">Check</button>
+    </form>
+    <form onsubmit="getQueryAnswer(); return false;">
+      <div>
+        <label for="query">Query:</label>
+        <textarea type="text" name="query" id="query"></textarea>
+      </div>
+
+      <button type="submit">Answer</button>
+    </form>
+
+    <pre class="response"></pre>
+    <script src="./index.js"></script>
+  </body>
+</html>
