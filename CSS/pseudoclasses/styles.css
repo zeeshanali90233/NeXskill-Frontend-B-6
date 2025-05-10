@@ -1,0 +1,124 @@
+.btn-click {
+  padding: 10px;
+  background-color: bisque;
+}
+
+/* Pseudo Classes */
+/* : */
+/* Special State of Element */
+
+.btn-click:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+#name:active {
+  border: 15px solid green;
+}
+
+/* Unvisited Links */
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+/* Pseudo Elements */
+/* :: */
+/* Special Style Particular part of element */
+
+.description {
+  color: green;
+}
+
+.description::first-line {
+  font-weight: 700;
+}
+.description::first-letter {
+  font-size: 34px;
+}
+
+.description::before {
+  content: "This is";
+}
+.description::after {
+  content: "End of game";
+}
+
+::selection {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  /* Transitions */
+  transition: all 0.3s linear;
+}
+
+.container:hover {
+  border-radius: 50%;
+}
+
+.progress {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-top: 10px;
+  /* Transitions */
+  transition: all 1s ease-in-out;
+}
+
+.progress:hover {
+  /* width: 500px; */
+  rotate: -180deg;
+  background-color: chocolate;
+}
+
+/* Position Models */
+
+/* With Absolute the icon moves with screen */
+/* So we used fixed */
+.whatsapp {
+  position: fixed;
+  left: 10px;
+  bottom: 20px;
+}
+
+.navbar {
+  background-color: aqua;
+  position: sticky;
+  top: 0px;
+}
+
+.items-container {
+  width: 100%;
+  height: 200px;
+  background-color: aquamarine;
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+}
+
+.item1 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+
+/* Static: By Default */
+/* Absolute: Outside Normal Flow, with 4 properties */
+/* Fixed: Same as absolute, where fixed not move with screen */
+/* Relative: In normal flow, with 4 properties */
+/* Sticky: Same as absolute but sticks to top when scrolls down or going out of screen */
