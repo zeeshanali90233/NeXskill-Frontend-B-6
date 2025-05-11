@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Used fr unit here because to make it responsive */
+.layout {
+  display: grid;
+  grid-template-rows: 1fr 7fr 1fr;
+  grid-template-columns: 1fr 5fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  border: 2px solid black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: bisque;
+}
+.footer {
+  background-color: brown;
+  border: 2px solid black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.main-content {
+  background-color: coral;
+  border: 2px solid black;
+}
+.sidebar {
+  background-color: cornflowerblue;
+  border: 2px solid black;
+}
